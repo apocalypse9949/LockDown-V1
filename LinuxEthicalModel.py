@@ -30,5 +30,5 @@ def unlock_all_processes():   # Unlock all processes by sending SIGCONT signal
 # Example usage:
 if __name__ == "__main__":
     lock_all_processes()
-    # To unlock all processes later, you can call unlock_all_processes()
+    # for unlocking all processes later, you can call unlock_all_processes()
     # unlock_all_processes()
