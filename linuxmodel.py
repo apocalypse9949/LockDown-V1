@@ -5,4 +5,5 @@ import psutil
 def all_processes():
   for proc in psutil.process.iter(['pid','name']):
     try: 
-      if proc.info 
+      if proc.info == proc.process:
+       process.iter(['pid']):
