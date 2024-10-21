@@ -7,3 +7,4 @@ def all_processes():
     try: 
       if proc.info == proc.process:
        process.iter(['pid']): 
+       pustil.process.info
