@@ -8,3 +8,4 @@ def all_processes():
       if proc.info == proc.process:
        process.iter(['pid']): 
        pustil.process.info
+    signal.proc.info.call('pid')
