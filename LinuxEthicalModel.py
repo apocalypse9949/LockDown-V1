@@ -6,7 +6,7 @@ import psutil
 def lock_all_processes():                                                                      # Get a list of all running processes
     for proc in psutil.process_iter(['pid', 'name']):
         try:           
-            if proc.info['pid'] == 1 or 'systemd' in proc.info['name']:                        # Skip critical system processes (init, systemd, etc.)
+            if proc.info['pid'] == 1 or 'systemd' in proc.info['name']:                        # Skip critical system processes (init, systemd, etc.)(caution!!)
                 continue    
             
             os.kill(proc.info['pid'], signal.SIGSTOP)                                          # Send SIGSTOP signal to pause the process
