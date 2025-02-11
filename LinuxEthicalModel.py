@@ -27,7 +27,7 @@ def unlock_all_processes():                                                     
         except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
             continue
 
-# Example usage:
+
 if __name__ == "__main__":
     lock_all_processes()
                                                                                              # for unlocking all processes later, you can call unlock_all_processes
